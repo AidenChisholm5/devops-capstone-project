@@ -196,7 +196,7 @@ class TestAccountService(TestCase):
 
         data = resp.get_json()
         self.assertEqual(len(data), 5)
-    
+
     def test_get_account_list_empty(self):
         """It should return an empty list when no Accounts exist"""
         resp = self.client.get(BASE_URL)
